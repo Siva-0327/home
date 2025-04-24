@@ -1,0 +1,384 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #fbf2f2;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2196F3;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.login-btn {
+    background-color: white;
+    color: #2196F3 !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+/* Main Content */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Service Categories */
+.service-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    gap: 12px;
+}
+
+.service-card.mint {
+    background-color: #88e9ef;
+}
+
+.service-card.peach {
+    background-color: #f3e9a4;
+}
+
+.service-card.yellow {
+    background-color: #ffd1a3;
+}
+
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.service-text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.service-text p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Home Services Banner */
+.home-services-banner {
+    background-color: #E0F7F5;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.worker-image {
+    width: 80px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.banner-text h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.banner-text p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Promo Banner */
+.promo-banner {
+    background-color: #886deae6;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promo-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.promo-text {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.promo-text h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding-left: 40px;
+}
+
+.promo-text p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    padding-left: 40px;
+}
+
+.phone-image {
+    width: 250px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Services Section */
+.services-section {
+    margin-bottom: 20px;
+}
+
+.services-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.service-item {
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.service-item p {
+    font-size: 13px;
+    color: #333;
+}
+
+/* Bottom Cards */
+.bottom-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.doctor-card, .ride-card {
+    background-color:white  ;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 28   110px;
+}
+
+.doctor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.doctor-text h3, .ride-text h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 2px;
+    font-size: xx-large ;
+    display: inline-block;
+    padding-right: 200px;
+}
+
+.doctor-text p, .ride-text p {
+    font-size: 13px;
+    color: #666;
+}
+
+.ride-card {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 282px;
+    height: 150px;
+}
+
+.ride-card img {
+    padding-top: 20px;
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Groceries Section */
+.groceries-section {
+    background-color: rgb(252, 250, 250);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.groceries-section h2 {
+    padding-left: 40px;
+    font-size: 18px;
+    color: #333;
+}
+
+.groceries-section img {
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .service-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 12px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .bottom-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card, .ride-card {
+        padding: 12px;
+    }
+
+    .groceries-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .groceries-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .service-card {
+        padding: 10px;
+    }
+
+    .service-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .service-text h3 {
+        font-size: 14px;
+    }
+
+    .service-text p {
+        font-size: 12px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
